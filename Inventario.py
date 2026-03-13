@@ -2,9 +2,9 @@
 
 print("Welcome to my Inventory")
 # start the program
-ingresar=input("Do you want start the program?(SI/NO) ").lower()
+ingresar=input("Do you want start the program?(YES/NO) ").lower()
 
-while ingresar == "si":
+while ingresar == "yes":
     # Name of the product
     name=input("Enter the name of the product: ")
     
@@ -26,7 +26,13 @@ while ingresar == "si":
         except:
             print("Value incorrect") #when enter an incorrect value
 
-    ingresar=input("Desea ingresar al programa?(SI/NO) ").lower() #it backs to the start
+    ingresar=input("Do you want start the program?(YES/NO) ").lower() #it backs to the start
 
-print("chao") #the end
+print("GOOD BYE") #the end of the program
 
+# This program simulates a simple inventory purchase system.
+# It asks the user if they want to start the program and then requests
+# the product name, price, and quantity. It validates that the user
+# enters correct numeric values and that they are greater than 0.
+# After that, it calculates and displays the total cost of the product.
+# The program repeats until the user decides to exit.
