@@ -19,7 +19,8 @@ while ingresar == "si":
                 continue
             # The total cost is calculated here
             total_cost=precio*quantity
-            print(total_cost)
+            #show the result
+            print(f"You're going to take {quantity} of the product {name} with the price of {precio}. The total is {total_cost} ")
             break
 
         except:
