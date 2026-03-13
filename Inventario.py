@@ -13,17 +13,19 @@ while ingresar == "si":
         try:
             precio= float(input("Enter the price of the product: ")) #price of product
             quantity=int(input("Enter the quantity: ")) # Quantity of product
-            
-            if precio < 0 or quantity < 0:  #parameters of error in price and quantity
+            if precio < 1 or quantity < 1:  #parameters of error in price and quantity
 
-                print("This values can't a number negative.")
+                print("You can't buy lower than 1")
                 continue
+            # The total cost is calculated here
+            total_cost=precio*quantity
+            print(total_cost)
             break
 
         except:
             print("Value incorrect") #when enter an incorrect value
 
-    ingresar=input("Do you want start the program?(SI/NO) ").lower() #it backs to the start
+    ingresar=input("Desea ingresar al programa?(SI/NO) ").lower() #it backs to the start
 
 print("chao") #the end
 
